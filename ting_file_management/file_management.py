@@ -6,7 +6,6 @@ def txt_importer(path_file):
         return print("Formato inválido", file=sys.stderr)
     try:
         with open(path_file, "r") as txt_file:
-            # return [line for line in txt_file.split("\n")]
             text = txt_file.read()
             return [line for line in text.split("\n")]
     except OSError:

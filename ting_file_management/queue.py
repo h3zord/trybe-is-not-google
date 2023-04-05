@@ -9,7 +9,7 @@ class Queue(AbstractQueue):
         return len(self.queue)
 
     def enqueue(self, value):
-        self.queue.append(value)
+        return self.queue.append(value)
 
     def dequeue(self):
         if len(self.queue) == 0:
